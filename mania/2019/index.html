@@ -65,7 +65,7 @@
       position: -webkit-sticky;
       position: sticky;
       top:0;
-     
+
     }
 
     /* Style the button that is used to open and close the collapsible content */
@@ -438,10 +438,10 @@
           coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var events = this.nextElementSibling;
-            if (events.style.display === "block") {
-              events.style.display = "none";
-            } else {
+            if (events.style.display === "none") {
               events.style.display = "block";
+            } else {
+              events.style.display = "none";
             }
           });
         }
