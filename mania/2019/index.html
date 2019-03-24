@@ -18,7 +18,7 @@
     <meta name="description" content="Wrestling event listings in New York, L.A., London, Dublin, Belfast and more.">
     <meta name="keywords" content="Wrestling events near me">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="animate.css">
+    <!--<link rel="stylesheet" type="text/css" href="animate.css">-->
 
     <style type="text/css">
 
@@ -37,21 +37,7 @@
       -webkit-font-smoothing: antialiased;
       text-align: center;
       color: #fff;
-      background: #000000;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      height: 100%;
 
-      color: #fff;
-
-    }
-
-    #teaser{
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      
     }
     
 
@@ -63,22 +49,6 @@
 
     }
 
-    p.mania{
-      position: fixed;
-      top: 0px;
-      width: 100%;
-      padding: 10px;
-      text-align: center;
-      color: #050505;
-      background: white;
-      box-sizing: border-box;
-
-
-    }
-
-    p.mania:hover{
-      opacity: 0.75;
-     }
 
     a{
       text-decoration: none;
@@ -92,8 +62,10 @@
     }
 
     .day.collapsible{
+      position: -webkit-sticky;
       position: sticky;
       top:0;
+     
     }
 
     /* Style the button that is used to open and close the collapsible content */
