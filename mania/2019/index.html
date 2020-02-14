@@ -17,6 +17,11 @@
     <meta name="author" content="name">
     <meta name="description" content="Wrestling event listings in New York, L.A., London, Dublin, Belfast and more.">
     <meta name="keywords" content="Wrestling events near me">
+
+    <meta property="og:title" content="Wrestlecal • Wrestlemania 2019 Schedule • Wrestling in New York / New Jersey Area" />
+    <meta property="og:url" content="http://wrestlecal.com" />
+    <meta property="og:image" content="http://wrestlecal.com/mania/2019/images/og-image.png" />
+    
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
     <!--<link rel="stylesheet" type="text/css" href="animate.css">-->
 
@@ -39,6 +44,10 @@
       color: #fff;
 
     }
+    header{
+      padding: 6px 0px;
+    
+    }
 
     h1{
       font-weight: 400;
@@ -52,12 +61,23 @@
       margin-top: 30px;
       margin-bottom: 8px;
       line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      font-weight: 300;
+    }
+
+    h2.intro{
+      font-weight: 300;
+      text-align: center;
+      font-size: 32px;
+      padding: 16px;
+      text-transform: none;
+      font-family: 'Nixie One', cursive;
     }
     
 
     p{
       text-transform: uppercase;
-      letter-spacing: -0.5px;
       font-weight: 400;
       font-size: 17px;
 
@@ -78,20 +98,17 @@
     a.tickets{
       padding: 15px 40px;
       border-radius: 40px;
-      background: blue;
-      display: inline-block;
+      background: #0097FF;
+      display: block;
       text-transform: uppercase;
       text-align: center;
       color: #fff;
-      position: absolute; 
-      bottom: 140px;
-      right: 20px;
     }
     .chevron{
       display: block;
-    background: url(images/icons/chevron-down.svg) right no-repeat;
-    background-size: 20px;
-    text-transform: uppercase;
+      background: url(images/icons/chevron-down.svg) right no-repeat;
+      background-size: 20px;
+      text-transform: uppercase;
 
     }
 
@@ -165,35 +182,125 @@
     .event p{
       font-family: sans-serif;
       font-size: 12px;
-      color:#8C8C8C;
+      color:#4e4e4e;
+
+    }
+
+    .time{
+      font-weight: bold;
     }
 
     a.directions{
       display: block;
       border: 1px solid #8C8C8C;
-      color: #8C8C8C;
-      padding: 6px;
-      font-family: sans-serif;
+      color: #4e4e4e;
+   
       text-transform: uppercase;
-      font-size: 12px;
-      width: 100%;
+     
+     
       margin: 10px auto;
       border-radius: 30px;
       text-align: center;
-      box-sizing: border-box;
+    
+      padding: 15px 40px;
+      border-radius: 40px;
+    }
+
+    @media only screen and (min-width: 800px) {
+
+      .event{
+        max-width: 50%;
+      }
     }
 
 
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+  text-transform: uppercase;
+
+}
+
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.burger{
+  position: absolute;
+  right: 0;
+  margin-right: 18px;
+  font-size: 24px;
+  margin-top:5px;
+}
     </style>
 
   </head>
 
 
-  <body>
+  <body id="main">
 
       <header>
-        <h1>WRESTLE<span>CAL</span></h1>
+
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="http://wrestlecal.com/mania/2019/about/">About</a>
+        <a href="mailto:hello@wrestlecal.com">Contact</a>
+        <a href="http://twitter.com/wrestlecal_">Twitter</a>
+        <a href="mailto:hello@wrestlecal.com?subject=Add this event to Wrestlecal">Submit an event</a>
+      </div>
+
+      <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <h1>WRESTLE<span>CAL</span></h1>
       </header>
+
+
+    
+     
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+     <!-- <h2 class="intro">Every event during Wrestlemania week—in one place</h2>
+      <p></p>-->
       
      
       <section class="apr3">
@@ -209,7 +316,7 @@
               <h2>Pizza Party Wrestling</h2>
               <p><span class="time">7pm</span><span class="dot"></span> • <span class="location general">Ridgefield Park, NJ </span></p>
 
-              <a class="directions" href="">Directions</a>
+              <a class="directions" href="https://goo.gl/maps/BnFXRBQ4WRw">Directions</a>
               <a href="https://www.eventbrite.com/e/pizza-party-wrestling-tickets-55193614587" class="tickets">Tickets</a>
             
             </div>
@@ -235,10 +342,10 @@
             <img src="images/battle-club-pro.gif"/>
             <div class="inner">
               <h2>Battle Club Pro: Women Crush Wednesday</h2>
-              <p><span class="time">7:30pm</span><span class="dot"></span> • <span class="location general">Brooklyn, NY</span></p>
+              <p><span class="time">7:30pm</span><span class="dot"></span> Brooklyn Stuy Dome • <span class="location general">Brooklyn, NY</span></p>
 
-              <a class="directions" href="">Directions</a>
-              <a class="tickets">Tickets</a>
+              <a class="directions" href="https://goo.gl/maps/bXSNeJ5umY82">Directions</a>
+              <a href="https://www.brownpapertickets.com/event/4093513" class="tickets">Tickets</a>
             
             </div>
 
@@ -253,7 +360,7 @@
             <p><span class="time">8:30pm</span><span class="dot"></span> • Rahway Recreation Center, NJ<span class="location general"> </span></p>
 
             <a class="directions" href="https://goo.gl/maps/zyCKsseVJb32">Directions</a>
-            <a class="tickets">Tickets</a>
+            <a href="https://www.eventbrite.com/e/wrestlepro-does-funny-equal-money-tickets-54052239704" class="tickets">Tickets</a>
           
           </div>
 
@@ -332,7 +439,7 @@
               <p><span class="time">4pm</span><span class="dot"></span> • White Eagle Hall, NJ<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/RXXauq9eKUF2">Directions</a>
-              <a href="https://www.eventbrite.com/e/gcw-presents-josh-barnetts-bloodsport-tickets-51579142604">Tickets</a>
+              <a class="tickets" href="https://www.eventbrite.com/e/gcw-presents-josh-barnetts-bloodsport-tickets-51579142604">Tickets</a>
             
             </div>
 
@@ -346,7 +453,7 @@
               <p><span class="time">6pm</span><span class="dot"></span> • Pier 12, Brooklyn<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/9CTB4SW1RNz">Directions</a>
-              <a href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-04-2019/event/0000564468E90C69?artistid=858575&majorcatid=10004&minorcatid=27#efeat6916">Tickets</a>
+              <a class="tickets" href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-04-2019/event/0000564468E90C69?artistid=858575&majorcatid=10004&minorcatid=27#efeat6916">Tickets</a>
             
             </div>
 
@@ -360,7 +467,7 @@
               <p><span class="time">7pm</span><span class="dot"></span> • Melrose Ballroom, Queens, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/Wndsm2Yd6A62">Directions</a>
-              <a href="https://www.eventbrite.com/e/mlw-rise-of-the-renegades-major-league-wrestling-fusion-tv-taping-tickets-51098285347?aff=erelexpmlt">Tickets</a>
+              <a class="tickets" href="https://www.eventbrite.com/e/mlw-rise-of-the-renegades-major-league-wrestling-fusion-tv-taping-tickets-51098285347?aff=erelexpmlt">Tickets</a>
             
             </div>
 
@@ -374,7 +481,7 @@
               <p><span class="time">7pm</span><span class="dot"></span> • Hilton Midtown, Manhattan, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/w1Y9W3D4Fu52">Directions</a>
-              <a href="https://www.showclix.com/event/wrestlecon-2019-supershow/pyos">Tickets</a>
+              <a class="tickets" href="https://www.showclix.com/event/wrestlecon-2019-supershow/pyos">Tickets</a>
             
             </div>
 
@@ -388,7 +495,7 @@
               <p><span class="time">7pm</span><span class="dot"></span> • Stage 48, Manhattan, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/prfvEjro6dr">Directions</a>
-              <a href="https://www.eventbrite.com/e/divamania-tickets-56288486378">Tickets</a>
+              <a class="tickets" href="https://www.eventbrite.com/e/divamania-tickets-56288486378">Tickets</a>
             
             </div>
 
@@ -402,7 +509,7 @@
               <p><span class="time">8pm</span><span class="dot"></span> • White Eagle Hall <span class="location general">Jersey City, NJ</span></p>
 
               <a class="directions" href="https://goo.gl/maps/ddS1SP6fLZ72">Directions</a>
-              <a href="https://bonerjam.brownpapertickets.com/">Tickets</a>
+              <a class="tickets" href="https://bonerjam.brownpapertickets.com/">Tickets</a>
             
             </div>
 
@@ -416,7 +523,7 @@
               <p><span class="time">8pm</span><span class="dot"></span> • La Boom, New York<span class="location general"> • Queens, NY </span></p>
 
               <a class="directions" href="https://goo.gl/maps/QHiBntFgPrK2">Directions</a>
-              <a href="https://www.etix.com/ticket/p/7017734/ddt-prowrestling-the-wwnlive-experience-2019-woodside-la-boom">Tickets</a>
+              <a class="tickets" href="https://www.etix.com/ticket/p/7017734/ddt-prowrestling-the-wwnlive-experience-2019-woodside-la-boom">Tickets</a>
             
             </div>
 
@@ -430,7 +537,7 @@
               <p><span class="time">9pm</span><span class="dot"></span> • Sony Hall, Manhattan, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/SHEwcwNvB3o">Directions</a>
-              <a href="https://www1.ticketmaster.com/event/00005667B87D9C44?brand=sonyhall&camefrom=cfc_sonyhall_190404website">Tickets</a>
+              <a class="tickets" href="https://www1.ticketmaster.com/event/00005667B87D9C44?brand=sonyhall&camefrom=cfc_sonyhall_190404website">Tickets</a>
             
             </div>
 
@@ -444,7 +551,7 @@
               <p><span class="time">7pm</span><span class="dot"></span> • Rahway Recreation Center, NJ<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/zyCKsseVJb32">Directions</a>
-              <a href="https://www.eventbrite.com/e/impact-wrestling-presents-united-we-stand-tickets-55620684966">Tickets</a>
+              <a class="tickets" href="https://www.eventbrite.com/e/impact-wrestling-presents-united-we-stand-tickets-55620684966">Tickets</a>
             
             </div>
 
@@ -457,7 +564,7 @@
               <p><span class="time">11pm</span><span class="dot"></span> • White Eagle Hall, NJ<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/RXXauq9eKUF2">Directions</a>
-              <a href="https://www.eventbrite.com/e/absolute-intense-wrestling-presents-aiws-slumber-party-massacre-tickets-51267080217">Tickets</a>
+              <a class="tickets" href="https://www.eventbrite.com/e/absolute-intense-wrestling-presents-aiws-slumber-party-massacre-tickets-51267080217">Tickets</a>
             
             </div>
 
@@ -470,7 +577,7 @@
               <p><span class="time">11:55pm</span><span class="dot"></span> • La Boom, New York<span class="location general"> • Queens, NY </span></p>
 
               <a class="directions" href="https://goo.gl/maps/QHiBntFgPrK2">Directions</a>
-              <a href="https://www.etix.com/ticket/p/8501610/kaiju-big-battel-the-wwnlive-experience-2019-woodside-la-boom">Tickets</a>
+              <a class="tickets" href="https://www.etix.com/ticket/p/8501610/kaiju-big-battel-the-wwnlive-experience-2019-woodside-la-boom">Tickets</a>
             
             </div>
 
@@ -495,7 +602,7 @@
               <p><span class="time">11am</span><span class="dot"></span> • Hilton Midtown, Manhattan, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/w1Y9W3D4Fu52">Directions</a>
-              <a href="https://www.showclix.com/event/wrestlecon-us-vs-world" class="tickets">Tickets</a>
+              <a class="tickets" href="https://www.showclix.com/event/wrestlecon-us-vs-world" class="tickets">Tickets</a>
             
             </div>
 
@@ -509,7 +616,7 @@
               <p><span class="time">11am</span><span class="dot"></span> • La Boom, New York<span class="location general"> • Queens, NY </span></p>
 
               <a class="directions" href="https://goo.gl/maps/QHiBntFgPrK2">Directions</a>
-              <a href="https://www.etix.com/ticket/p/8571861/shimmer-women-athletes-the-wwnlive-experience-2019-woodside-la-boom" class="tickets">Tickets</a>
+              <a class="tickets" href="https://www.etix.com/ticket/p/8571861/shimmer-women-athletes-the-wwnlive-experience-2019-woodside-la-boom" class="tickets">Tickets</a>
             
             </div>
 
@@ -536,7 +643,7 @@
               <p><span class="time">12pm</span><span class="dot"></span> • NYC arena, Queens NY <span class="location general"></span></p>
 
               <a class="directions" href="https://goo.gl/maps/J8V59bKkX3m">Directions</a>
-              <a href="https://www.ipwstore.co.uk/product/5th-april-2019-nyc-arena-new-york?fbclid=IwAR24YV9BUMXt3fg5i5WdGUacmTgtoGFSmOsFtUiw65_ifsHjKNNafV-gEDY">Tickets</a>
+              <a class="tickets" href="https://www.ipwstore.co.uk/product/5th-april-2019-nyc-arena-new-york?fbclid=IwAR24YV9BUMXt3fg5i5WdGUacmTgtoGFSmOsFtUiw65_ifsHjKNNafV-gEDY">Tickets</a>
             
             </div>
 
@@ -550,7 +657,7 @@
               <p><span class="time">1pm</span><span class="dot"></span> • Pier 12, Brooklyn<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/9CTB4SW1RNz">Directions</a>
-              <a href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-05-2019/event/000056449FD524E4?artistid=858575&majorcatid=10004&minorcatid=276">Tickets</a>
+              <a class="tickets" href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-05-2019/event/000056449FD524E4?artistid=858575&majorcatid=10004&minorcatid=276">Tickets</a>
             
             
             </div>
@@ -565,7 +672,7 @@
               <p><span class="time">3pm</span><span class="dot"></span> • La Boom, New York<span class="location general"> • Queens, NY </span></p>
 
               <a class="directions" href="https://goo.gl/maps/QHiBntFgPrK2">Directions</a>
-              <a href="https://www.etix.com/ticket/p/8473141/wwn-supershowmercury-rising-2019-the-wwnlive-experience-2019-woodside-la-boom">Tickets</a>
+              <a class="tickets" href="https://www.etix.com/ticket/p/8473141/wwn-supershowmercury-rising-2019-the-wwnlive-experience-2019-woodside-la-boom">Tickets</a>
             
             
             </div>
@@ -581,7 +688,7 @@
               <p><span class="time">3pm</span><span class="dot"></span> • Hilton Midtown, Manhattan, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/w1Y9W3D4Fu52">Directions</a>
-              <a href="https://www.showclix.com/event/wrestlecon-revpro-live">Tickets</a>
+              <a class="tickets" href="https://www.showclix.com/event/wrestlecon-revpro-live">Tickets</a>
             
             
             </div>
@@ -596,7 +703,7 @@
               <p><span class="time">3:30pm</span><span class="dot"></span> • White Eagle Hall <span class="location general">Jersey City, NJ</span></p>
 
               <a class="directions" href="https://goo.gl/maps/ddS1SP6fLZ72">Directions</a>
-              <a href="https://www.brownpapertickets.com/event/3688045?fbclid=IwAR1PQn9rS-f6sMlxUAapG2BE5ziHJ1RyEfFTVKyVumDE24Dz5JE9sPC7sHU">Tickets</a>
+              <a class="tickets" href="https://www.brownpapertickets.com/event/3688045?fbclid=IwAR1PQn9rS-f6sMlxUAapG2BE5ziHJ1RyEfFTVKyVumDE24Dz5JE9sPC7sHU">Tickets</a>
             
             
             </div>
@@ -611,7 +718,7 @@
               <p><span class="time">4pm</span><span class="dot"></span> • NYC Arena • <span class="location general">Queens, NY </span></p>
 
               <a class="directions" href="https://www.google.com/maps/@40.700159,-73.810406,12z?hl=en-US">Directions</a>
-              <a href="https://www.brownpapertickets.com/event/3688045?fbclid=IwAR1PQn9rS-f6sMlxUAapG2BE5ziHJ1RyEfFTVKyVumDE24Dz5JE9sPC7sHU">Tickets</a>
+              <a class="tickets" href="https://www.brownpapertickets.com/event/3688045?fbclid=IwAR1PQn9rS-f6sMlxUAapG2BE5ziHJ1RyEfFTVKyVumDE24Dz5JE9sPC7sHU">Tickets</a>
             
             
             </div>
@@ -626,7 +733,7 @@
               <p><span class="time">6pm</span><span class="dot"></span> • Hilton Midtown, Manhattan, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/w1Y9W3D4Fu52">Directions</a>
-              <a href="https://www.brownpapertickets.com/event/3688045?fbclid=IwAR1PQn9rS-f6sMlxUAapG2BE5ziHJ1RyEfFTVKyVumDE24Dz5JE9sPC7sHU">Tickets</a>
+              <a class="tickets" href="https://www.brownpapertickets.com/event/3688045?fbclid=IwAR1PQn9rS-f6sMlxUAapG2BE5ziHJ1RyEfFTVKyVumDE24Dz5JE9sPC7sHU">Tickets</a>
             
             
             </div>
@@ -641,7 +748,7 @@
               <p><span class="time">6pm</span><span class="dot"></span> • Pier 12, Brooklyn<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/9CTB4SW1RNz">Directions</a>
-              <a href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-05-2019/event/00005644A45327E8?artistid=858575&majorcatid=10004&minorcatid=27">Tickets</a>
+              <a class="tickets" href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-05-2019/event/00005644A45327E8?artistid=858575&majorcatid=10004&minorcatid=27">Tickets</a>
             
             
             </div>
@@ -657,7 +764,7 @@
               <p><span class="time">6:15pm</span><span class="dot"></span> • Barclays Center, Brooklyn<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/zmbjy5REGBD2">Directions</a>
-              <a href="https://www1.ticketmaster.com/wwe-nxt-takeover-new-york-brooklyn-new-york-04-05-2019/event/00005574C9655B3D">Tickets</a>
+              <a class="tickets" href="https://www1.ticketmaster.com/wwe-nxt-takeover-new-york-brooklyn-new-york-04-05-2019/event/00005574C9655B3D">Tickets</a>
             
             
             </div>
@@ -672,7 +779,7 @@
               <p><span class="time">7pm</span><span class="dot"></span> • Melrose Ballroom, Queens, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/Wndsm2Yd6A62">Directions</a>
-              <a href="https://www.eventbrite.com/e/mlw-battle-riot-ii-major-league-wrestling-fusion-tv-taping-for-bein-sports-tickets-51098421755">Tickets</a>
+              <a class="tickets" href="https://www.eventbrite.com/e/mlw-battle-riot-ii-major-league-wrestling-fusion-tv-taping-for-bein-sports-tickets-51098421755">Tickets</a>
             
             
             </div>
@@ -687,7 +794,7 @@
               <p><span class="time">7pm</span><span class="dot"></span> • Sacred Heart Church, Glendale, NY<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/19zXTCjdnAu">Directions</a>
-              <a href="https://www.eventbrite.com/e/mlw-battle-riot-ii-major-league-wrestling-fusion-tv-taping-for-bein-sports-tickets-51098421755">Tickets</a>
+              <a class="tickets" href="https://www.eventbrite.com/e/mlw-battle-riot-ii-major-league-wrestling-fusion-tv-taping-for-bein-sports-tickets-51098421755">Tickets</a>
             
             
             </div>
@@ -732,7 +839,7 @@
               <p><span class="time">11:59pm</span><span class="dot"></span> • White Eagle Hall <span class="location general">Jersey City, NJ</span></p>
 
               <a class="directions" href="https://goo.gl/maps/ddS1SP6fLZ72">Directions</a>
-              <a href="https://www.brownpapertickets.com/event/3658450">Tickets</a>
+              <a class="tickets" href="https://www.brownpapertickets.com/event/3658450">Tickets</a>
             
             
             </div>
@@ -762,7 +869,7 @@
               <p><span class="time">8am</span><span class="dot"></span> • Pier 12, Brooklyn<span class="location general"> </span></p>
 
               <a class="directions" href="https://goo.gl/maps/9CTB4SW1RNz">Directions</a>
-              <a href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-06-2019/event/00005644A6AF2A42?artistid=858575&majorcatid=10004&minorcatid=27">Tickets</a>
+              <a class="tickets" href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-06-2019/event/00005644A6AF2A42?artistid=858575&majorcatid=10004&minorcatid=27">Tickets</a>
             
             
             </div>
@@ -790,7 +897,7 @@
              <p><span class="time">12pm</span><span class="dot"></span> • White Eagle Hall <span class="location general">Jersey City, NJ</span></p>
 
               <a class="directions" href="https://goo.gl/maps/ddS1SP6fLZ72">Directions</a>
-             <a href="https://www.eventbrite.com/e/gcw-presents-orange-cassidy-is-doing-something-tickets-58975708933" class="tickets">Tickets</a>
+             <a class="tickets" href="https://www.eventbrite.com/e/gcw-presents-orange-cassidy-is-doing-something-tickets-58975708933" class="tickets">Tickets</a>
            
            </div>
 
@@ -807,7 +914,7 @@
              <p><span class="time">12pm</span><span class="dot"></span> • NYC Arena • <span class="location general">Queens, NY </span></p>
 
              <a class="directions" href="https://www.google.com/maps/@40.700159,-73.810406,12z?hl=en-US">Directions</a>
-             <a href="https://www.tickettailor.com/events/houseofglorywrestling/215755/" class="tickets">Tickets</a>
+             <a class="tickets" href="https://www.tickettailor.com/events/houseofglorywrestling/215755/" class="tickets">Tickets</a>
            
            </div>
 
@@ -822,7 +929,7 @@
             <p><span class="time">2pm</span><span class="dot"></span> • The Bell House, Brooklyn, NY<span class="location general">  </span></p>
 
              <a class="directions" href="https://goo.gl/maps/dDYzmEeR4e32">Directions</a>
-            <a href="https://www.etix.com/ticket/p/5180565/morethanmaniacom-2019-wrap-up-party-the-bell-house-woodside-la-boom" class="tickets">Tickets</a>
+            <a class="tickets" href="https://www.etix.com/ticket/p/5180565/morethanmaniacom-2019-wrap-up-party-the-bell-house-woodside-la-boom" class="tickets">Tickets</a>
           
           </div>
 
@@ -836,7 +943,7 @@
             <p><span class="time">2pm</span><span class="dot"></span> • Rahway Recreation Center, NJ<span class="location general"> </span></p>
 
             <a class="directions" href="https://goo.gl/maps/zyCKsseVJb32">Directions</a>
-            <a href="https://chaoticwrestling.com/product/chaos-for-a-cause-connors-cure-saturday-april-6-2019-rahway-nj-v-i-p-rows-2-3/" class="tickets">Tickets</a>
+            <a class="tickets" href="https://chaoticwrestling.com/product/chaos-for-a-cause-connors-cure-saturday-april-6-2019-rahway-nj-v-i-p-rows-2-3/" class="tickets">Tickets</a>
           
           </div>
 
@@ -850,7 +957,7 @@
             <p><span class="time">1pm</span><span class="dot"></span> • Pier 12, Brooklyn<span class="location general"> </span></p>
 
              <a class="directions" href="https://goo.gl/maps/9CTB4SW1RNz">Directions</a>
-            <a href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-06-2019/event/00005644B38A34D2?artistid=858575&majorcatid=10004&minorcatid=27" class="tickets">Tickets</a>
+            <a class="tickets" href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-06-2019/event/00005644B38A34D2?artistid=858575&majorcatid=10004&minorcatid=27" class="tickets">Tickets</a>
           
           </div>
 
@@ -865,7 +972,7 @@
             <p><span class="time">2pm</span><span class="dot"></span> • Gramercy Theatre • <span class="location general">Manhattan, NY </span></p>
 
             <a class="directions" href="https://goo.gl/maps/UKbYhwfJzEC2">Directions</a>
-            <a href="https://concerts1.livenation.com/event/0000564A0DF94942/" class="tickets">Tickets</a>
+            <a class="tickets" href="https://concerts1.livenation.com/event/0000564A0DF94942/">Tickets</a>
           
           </div>
 
@@ -880,7 +987,7 @@
             <p><span class="time">4pm</span><span class="dot"></span> • White Eagle Hall <span class="location general">Jersey City, NJ</span></p>
 
             <a class="directions" href="https://goo.gl/maps/ddS1SP6fLZ72">Directions</a>
-            <a href="https://iws.ticketleap.com/jersey/dates/Apr-06-2019_at_0400PM" class="tickets">Tickets</a>
+            <a class="tickets" href="https://iws.ticketleap.com/jersey/dates/Apr-06-2019_at_0400PM" class="tickets">Tickets</a>
           
           </div>
 
@@ -895,7 +1002,7 @@
             <p><span class="time">6pm</span><span class="dot"></span> • Pier 12, Brooklyn<span class="location general"> </span></p>
 
              <a class="directions" href="https://goo.gl/maps/9CTB4SW1RNz">Directions</a>
-            <a href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-06-2019/event/00005644BB543AC2?artistid=858575&majorcatid=10004&minorcatid=27" class="tickets">Tickets</a>
+            <a class="tickets" href="https://www1.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-06-2019/event/00005644BB543AC2?artistid=858575&majorcatid=10004&minorcatid=27" class="tickets">Tickets</a>
           
           </div>
 
@@ -911,7 +1018,7 @@
             <p><span class="time">6:30pm</span><span class="dot"></span> • Pier 12, Brooklyn<span class="location general"> </span></p>
 
              <a class="directions" href="https://goo.gl/maps/8nGpSpEw2UR2">Directions</a>
-            <a href="https://www.eventbrite.com/e/uncanny-attractions-presents-drags-and-dropkicks-tickets-56441261332" class="tickets">Tickets</a>
+            <a class="tickets" href="https://www.eventbrite.com/e/uncanny-attractions-presents-drags-and-dropkicks-tickets-56441261332" class="tickets">Tickets</a>
           
           </div>
 
@@ -925,7 +1032,7 @@
             <p><span class="time">7:00pm</span><span class="dot"></span> • Barclays Center <span class="location general">• Brooklyn, NY</span></p>
 
              <a class="directions" href="https://goo.gl/maps/zmbjy5REGBD2">Directions</a>
-            <a href="https://www1.ticketmaster.com/wwe-hall-of-fame-2019-brooklyn-new-york-04-06-2019/event/00005574C9445B2E" class="tickets">Tickets</a>
+            <a class="tickets" href="https://www1.ticketmaster.com/wwe-hall-of-fame-2019-brooklyn-new-york-04-06-2019/event/00005574C9445B2E" class="tickets">Tickets</a>
           
           </div>
 
@@ -939,7 +1046,7 @@
             <p><span class="time">7:30pm</span><span class="dot"></span> • Madison Square Garden<span class="location general">, NY</span></p>
 
              <a class="directions" href="https://goo.gl/maps/pXq3YSHXHr822">Directions</a>
-            <a href="https://www1.ticketmaster.com/ring-of-honor-new-japan-prowrestling-new-york-new-york-04-06-2019/event/3B0055029AAC10F0" class="tickets">Tickets</a>
+            <a class="tickets" href="https://www1.ticketmaster.com/ring-of-honor-new-japan-prowrestling-new-york-new-york-04-06-2019/event/3B0055029AAC10F0" class="tickets">Tickets</a>
           
           </div>
 
@@ -953,7 +1060,7 @@
             <p><span class="time">8pm</span><span class="dot"></span> • Rahway Recreation Center, NJ<span class="location general"> </span></p>
 
             <a class="directions" href="https://goo.gl/maps/zyCKsseVJb32">Directions</a>
-            <a href="http://wrestleproonline.com/4619.html" class="tickets">Tickets</a>
+            <a class="tickets" href="http://wrestleproonline.com/4619.html" class="tickets">Tickets</a>
           
           </div>
 
@@ -967,7 +1074,7 @@
             <p><span class="time">11pm</span><span class="dot"></span> • McHales Pub & Grill, <span class="location general"> Manhattan, NY</span></p>
 
             <a class="directions" href="https://goo.gl/maps/YLt9bSzbfAm">Directions</a>
-            <a href="https://www.eventbrite.com/e/kevin-nashs-shenanigans-vip-party-times-square-tickets-56447278329" class="tickets">Tickets</a>
+            <a class="tickets" href="https://www.eventbrite.com/e/kevin-nashs-shenanigans-vip-party-times-square-tickets-56447278329" class="tickets">Tickets</a>
           
           </div>
 
@@ -981,7 +1088,7 @@
             <p><span class="time">11:59pm</span><span class="dot"></span> • White Eagle Hall <span class="location general">Jersey City, NJ</span></p>
 
             <a class="directions" href="https://goo.gl/maps/ddS1SP6fLZ72">Directions</a>
-            <a href="https://www.eventbrite.com/e/kevin-nashs-shenanigans-vip-party-times-square-tickets-56447278329" class="tickets">Tickets</a>
+            <a class="tickets" href="https://www.eventbrite.com/e/kevin-nashs-shenanigans-vip-party-times-square-tickets-56447278329" class="tickets">Tickets</a>
           
           </div>
 
@@ -1005,7 +1112,7 @@
               <p><span class="time">8am</span><span class="dot"></span> • Pier 12, Brooklyn<span class="location general"> </span></p>
   
                <a class="directions" href="https://goo.gl/maps/9CTB4SW1RNz">Directions</a>
-              <a href="http://www.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-07-2019/event/00005644BE833D68?artistid=858575&majorcatid=10004&minorcatid=27" class="tickets">Tickets</a>
+              <a class="tickets" href="http://www.ticketmaster.com/wrestlemania-axxess-brooklyn-new-york-04-07-2019/event/00005644BE833D68?artistid=858575&majorcatid=10004&minorcatid=27" class="tickets">Tickets</a>
             
             </div>
   
@@ -1019,7 +1126,7 @@
              <p><span class="time">12pm</span><span class="dot"></span> • <span class="location general">Redd's Restaurant, NJ </span></p>
 
              <a class="directions" href="https://goo.gl/maps/PRdawXtTTxx">Directions</a>
-             <a href="https://www.tickettailor.com/events/bcbp/224017/" class="tickets">Tickets</a>
+             <a class="tickets" href="https://www.tickettailor.com/events/bcbp/224017/" class="tickets">Tickets</a>
            
            </div>
 
@@ -1033,7 +1140,7 @@
               <p><span class="time">12pm</span><span class="dot"></span> • <span class="location general">106 Bergen Ave	Newark, NJ </span></p>
 
               <a class="directions" href="https://goo.gl/maps/Sj1e5gksf4P2">Directions</a>
-              <a href="https://www.brownpapertickets.com/event/4049003" class="tickets">Tickets</a>
+              <a class="tickets" href="https://www.brownpapertickets.com/event/4049003">Tickets</a>
             
             </div>
 
@@ -1108,7 +1215,7 @@
         
       </section>
 
-      <section class="day apr4">
+      <section class="day apr9">
         <div class="day collapsible"><span class="chevron">Tue 9 Apr</span></div>
       
 

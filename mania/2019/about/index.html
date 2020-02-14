@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136813591-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-136813591-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wrestlecal • Wrestlemania 2019 Schedule • Wrestling in New York / New Jersey Area </title>
+    <meta name="author" content="name">
+    <meta name="description" content="Wrestling event listings in New York">
+    <meta name="keywords" content="Wrestling events near me">
+
+    <meta property="og:title" content="Wrestlecal • Wrestlemania 2019 Schedule • Wrestling in New York / New Jersey Area" />
+    <meta property="og:url" content="http://wrestlecal.com" />
+    <meta property="og:image" content="http://wrestlecal.com/mania/2019/images/og-image.png" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="animate.css">-->
+
+    <style type="text/css">
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    html{
+      height: 100%;
+    }
+
+    body{
+      background-color:#050505;
+      font-family: 'Oswald', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      color: #fff;
+
+    }
+    header{
+      padding: 6px 0px;
+    
+    }
+
+    h1{
+      font-weight: 400;
+    }
+
+    h1 span{ 
+    font-weight: 600; 
+    }
+
+    h2{
+      margin-top: 30px;
+      margin-bottom: 8px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      font-weight: 300;
+    }
+
+    h2.intro{
+      font-weight: 300;
+      text-align: center;
+      font-size: 32px;
+      padding: 16px;
+      text-transform: uppercase;
+  
+    }
+    
+
+    p{
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 17px;
+
+    }
+
+    .about p{
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 1.618;
+      text-align: left;
+      text-transform: none;
+      margin-bottom: 20px;
+      color: #afafaf;
+
+    }
+
+    .about h2{
+      text-align: left;
+      padding-left: 0;
+    }
+
+    .about header{
+      border-bottom: 1px solid #333;
+    }
+
+    .about a{
+      color: #fff;
+      border-bottom: 1px solid #333;
+
+    }
+
+
+    a{
+      text-decoration: none;
+      color:#333;
+     
+    }
+
+    a:hover{
+     opacity: 0.75;
+
+    }
+
+    a.tickets{
+      padding: 15px 40px;
+      border-radius: 40px;
+      background: #0097FF;
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+    .chevron{
+      display: block;
+      background: url(images/icons/chevron-down.svg) right no-repeat;
+      background-size: 20px;
+      text-transform: uppercase;
+
+    }
+
+
+    .day.collapsible{
+      position: -webkit-sticky;
+      position: sticky;
+      top:0;
+      z-index: 2;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+
+    }
+
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      padding: 18px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+      background-color: #333;
+    }
+
+   .active .chevron{
+
+    display: block;
+    background: url(images/icons/chevron-right.svg) right no-repeat;
+    background-size: 10px;
+
+   }
+
+    /* Style the collapsible content. Note: hidden by default */
+    .events {
+      padding: 0 18px;
+      display: block;    
+      background-color: #000;
+
+    }
+
+    .inner{
+      padding: 0px 20px 0px 20px;
+    }
+
+    .event{
+          background: white;
+          max-width: 340px;
+          border-radius: 6px;
+          color: #333;
+          margin: 20px auto;
+          position: relative;
+          z-index: 1;
+          padding-bottom: 30px;
+          text-align: left;
+
+    }
+
+    .event img{
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      width: 100%;
+    }
+
+    .event p{
+      font-family: sans-serif;
+      font-size: 12px;
+      color:#4e4e4e;
+
+    }
+
+    .time{
+      font-weight: bold;
+    }
+
+    a.directions{
+      display: block;
+      border: 1px solid #8C8C8C;
+      color: #4e4e4e;
+   
+      text-transform: uppercase;
+     
+     
+      margin: 10px auto;
+      border-radius: 30px;
+      text-align: center;
+    
+      padding: 15px 40px;
+      border-radius: 40px;
+    }
+
+    @media only screen and (min-width: 800px) {
+
+      .event{
+        max-width: 50%;
+      }
+    }
+
+
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+  text-transform: uppercase;
+
+}
+
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.burger{
+  position: absolute;
+  right: 0;
+  margin-right: 18px;
+  font-size: 24px;
+  margin-top:5px;
+}
+
+.contain{
+  max-width: 33em;
+  padding: 30px;
+}
+    </style>
+
+  </head>
+
+
+  <body class="about" id="main">
+
+      <header>
+
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="http://wrestlecal.com/mania/2019/about/">About</a>
+        <a href="mailto:hello@wrestlecal.com">Contact</a>
+        <a href="http://twitter.com/wrestlecal_">Twitter</a>
+        <a href="mailto:hello@wrestlecal.com?subject=Add this event to Wrestlecal">Submit an event</a>
+      </div>
+
+      <span class="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      <h1>WRESTLE<span>CAL</span></h1>
+      </header>
+
+
+    
+     
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+      <div class="contain">
+
+             <h2 class="intro">About</h2>
+             <p>It’s a great time to be a wrestling fan. Especially this time of year. </p>
+
+            <p>Wrestlemania started as one day event, but in recent years it’s grown into something more akin to a festival. This year alone there are almost <a href="http://wrestlecal.com/mania/2019">60 wrestling-related events</a> in the NY/NJ area over a 6 day period. </p>
+
+            <p>I don’t know about you, but I personally find it difficult to keep track of everything that's going on—never mind which events to attend. Add friends into the mix and things get even more complicated. </p>
+
+            <p>Consider this your basic guide to what’s on. All the events, but in one place. </p>
+
+            <p><i>Wrestlecal</i> is a very simple idea. A single destination where you can see a list of upcoming wrestling events in a given area.</p> 
+
+            <p>Stay tuned for more</p>
+
+            <p>Enjoy x</p>
+           
+            <p>—<a href="http://twitter.com/itsdavidhughes">David</a></p>
+       
+
+      </div>
+     
+
+
+
+  </body>
+</html>
