@@ -87,6 +87,7 @@
         display: block;
        
       }
+      
 
     #teaser{
       position: fixed;
@@ -136,6 +137,25 @@
 
     a:hover{
      opacity: 0.75;
+
+    }
+
+    @media screen and (max-width:400px){
+
+      h1{
+        font-size: 3em;
+      }
+
+      #teaser{
+
+      position: static;
+      transform:none;
+      
+    }
+
+    html{
+      height: 100%;
+    }
 
     }
 
